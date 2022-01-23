@@ -1,0 +1,11 @@
+[Unit]
+Description=1min timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=1us
+Unit=ddns@%I.service
+
+[Install]
+WantedBy=timers.target

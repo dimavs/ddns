@@ -1,0 +1,9 @@
+[Unit]
+Description=DDNS service for %I
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ddns.sh
+
+[Install]
+WantedBy=default.target
